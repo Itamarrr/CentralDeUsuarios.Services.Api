@@ -1,0 +1,12 @@
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Domain.Core\obj\Debug\net7.0\CentralDeUsuarios.Domain.Core.csproj.AssemblyReference.cache
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Domain.Core\obj\Debug\net7.0\CentralDeUsuarios.Domain.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Domain.Core\obj\Debug\net7.0\CentralDeUsuarios.Domain.Core.AssemblyInfoInputs.cache
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Domain.Core\obj\Debug\net7.0\CentralDeUsuarios.Domain.Core.AssemblyInfo.cs
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Domain.Core\obj\Debug\net7.0\CentralDeUsuarios.Domain.Core.csproj.CoreCompileInputs.cache
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Domain.Core\bin\Debug\net7.0\CentralDeUsuarios.Domain.Core.deps.json
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Domain.Core\bin\Debug\net7.0\CentralDeUsuarios.Domain.Core.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Domain.Core\bin\Debug\net7.0\CentralDeUsuarios.Domain.Core.pdb
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Domain.Core\obj\Debug\net7.0\CentralDeUsuarios.Domain.Core.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Domain.Core\obj\Debug\net7.0\refint\CentralDeUsuarios.Domain.Core.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Domain.Core\obj\Debug\net7.0\CentralDeUsuarios.Domain.Core.pdb
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Domain.Core\obj\Debug\net7.0\ref\CentralDeUsuarios.Domain.Core.dll
