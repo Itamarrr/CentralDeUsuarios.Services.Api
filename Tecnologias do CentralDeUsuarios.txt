@@ -1,0 +1,24 @@
+tecnologia 
+FluentValidation
+
+Biblioteca do EntityFramework para conexão com o banco ou para criar um banco via codfloster com migration
+-> noguet para a Biblioteca de classe CentralDeUsuario.Infra.Data
+Microsoft.EntityFrameworkCore 7.0 
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools -> server para o migration para abilitar os comandos como add migration
+Microsoft.EntityFrameworkCore.Design -> é uma complemantar para quem vai trabalhar codfloster ou seja com a de sima assim ajudar a mapear o banco
+Se o banco existir eu uso somente as duas primeiras.
+
+biblioteca que ler arquivo json
+Microsoft.Extensions.Configuration.Json
+
+comando migration o nome é como log para falar oque fez exemplo initial
+1 Add-Migration Initial o nomeo é Initial
+2 Update-Database
+3 caso eu queira um script de tudo que foi rodado é só da um 
+Script-Migration
+
+Biblioteca para teste de integração 
+biblioteca para teste usado o xUnit porem poderia ser o nUnit é feito quando vou criar novo projeto pesquiso por xUnit ao inves de biblioteca de classe
+
+

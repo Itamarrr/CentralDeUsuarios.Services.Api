@@ -13,7 +13,7 @@ namespace CentralDeUsuarios.UnitTests.Repositories
         //[Fact(Skip = "Não implementado")] em caso de não esta implementado coloco esse e tiro o [Fact]
         //[Fact]
         [Fact(Skip = "Não implementado")]
-        public  void TestCreat()
+        public  void TestCreate()
         {
 
         } 
@@ -23,7 +23,7 @@ namespace CentralDeUsuarios.UnitTests.Repositories
 
         }
         [Fact(Skip = "Não implementado")]
-        public  void TestDelet()
+        public  void TestDelete()
         {
 
         }  
