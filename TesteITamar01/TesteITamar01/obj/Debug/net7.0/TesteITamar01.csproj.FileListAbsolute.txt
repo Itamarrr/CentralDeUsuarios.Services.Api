@@ -1,0 +1,15 @@
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\TesteITamar01\TesteITamar01\bin\Debug\net7.0\TesteITamar01.exe
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\TesteITamar01\TesteITamar01\bin\Debug\net7.0\TesteITamar01.deps.json
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\TesteITamar01\TesteITamar01\bin\Debug\net7.0\TesteITamar01.runtimeconfig.json
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\TesteITamar01\TesteITamar01\bin\Debug\net7.0\TesteITamar01.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\TesteITamar01\TesteITamar01\bin\Debug\net7.0\TesteITamar01.pdb
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\TesteITamar01\TesteITamar01\obj\Debug\net7.0\TesteITamar01.csproj.AssemblyReference.cache
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\TesteITamar01\TesteITamar01\obj\Debug\net7.0\TesteITamar01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\TesteITamar01\TesteITamar01\obj\Debug\net7.0\TesteITamar01.AssemblyInfoInputs.cache
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\TesteITamar01\TesteITamar01\obj\Debug\net7.0\TesteITamar01.AssemblyInfo.cs
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\TesteITamar01\TesteITamar01\obj\Debug\net7.0\TesteITamar01.csproj.CoreCompileInputs.cache
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\TesteITamar01\TesteITamar01\obj\Debug\net7.0\TesteITamar01.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\TesteITamar01\TesteITamar01\obj\Debug\net7.0\refint\TesteITamar01.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\TesteITamar01\TesteITamar01\obj\Debug\net7.0\TesteITamar01.pdb
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\TesteITamar01\TesteITamar01\obj\Debug\net7.0\TesteITamar01.genruntimeconfig.cache
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\TesteITamar01\TesteITamar01\obj\Debug\net7.0\ref\TesteITamar01.dll

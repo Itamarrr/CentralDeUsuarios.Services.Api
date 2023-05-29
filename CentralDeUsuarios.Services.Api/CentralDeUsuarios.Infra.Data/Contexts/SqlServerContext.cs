@@ -11,12 +11,26 @@ namespace CentralDeUsuarios.Infra.Data.Contexts
 {
     public class SqlServerContext: DbContext
     {
-
-        //metodo para definir a string de conexão ou seja a conectionstring do projeto
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //Criando um metodo construtor ctor tab tab ele vai receber um cervico DbContextOptions<tipando ele por ele ser generio> dbContextOptions
+        //(DbContextOptions<SqlServerContext> dbContextOptions) é uma dependencia por padrão
+        //base(dbContextOptions) toda ves que usa base é porque estou acessando o contrutor da minha classe pai
+        //esta pasando pata a classe pai nesse caso é a DbContext ou seja estou pegando esse argumento dbContextOptions
+        //e passando para o construtor da DbContext ele vai receber todos os parametros para se conectar na base de dados
+        //dentre eles a connectionString
+        public SqlServerContext(DbContextOptions<SqlServerContext> dbContextOptions) 
+            : base(dbContextOptions)        
         {
-            optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BD_CentralDeUsuarios;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            //agora fazendo um injetor
+
+
         }
+        //foi criado um arquivo appsetting.json para receber por injeção de dependencia
+        //metodo para definir a string de conexão ou seja a conectionstring do projeto
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+
+        //    optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BD_CentralDeUsuarios;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        //}
 
 
         //metodo que podemos adcionar cada classe que foi feita no exemplo agora tem somente o UsuarioMap

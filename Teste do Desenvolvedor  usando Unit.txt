@@ -1,0 +1,6 @@
+Desenvolvedor que faz
+Teste unitario ->
+Ele é para isolar alguma parte critica do isitema e submeter a rotina do teste
+
+
+Teste de integração ->

@@ -1,0 +1,12 @@
+Desenvolvedor que faz
+Teste unitario ->
+Ele é para isolar alguma parte critica do isitema e submeter a rotina do teste
+
+
+Teste de integração ->
+já criado 
+https://api.cloudamqp.com/console/c13a1c5f-c15d-4a55-801d-0e08e233496b/details
+
+url de conexão da Mensageria colocar no json na parte de mensageria
+amqps://oykoxpbi:IXC9DJ0uWIxbeF9iPHfoHjUQjE4hxmse@shark.rmq.cloudamqp.com/oykoxpbi
+

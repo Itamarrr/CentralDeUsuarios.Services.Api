@@ -7,6 +7,7 @@ namespace CentralDeUsuarios.Services.Api.Controllers
     [ApiController]
     public class UsuariosController : ControllerBase
     {
+        //HttpPost para criar um usuario
         [HttpPost]
         public IActionResult Post()
         {

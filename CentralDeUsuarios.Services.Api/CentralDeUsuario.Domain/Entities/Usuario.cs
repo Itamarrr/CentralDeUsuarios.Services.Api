@@ -22,5 +22,8 @@ namespace CentralDeUsuario.Domain.Entities
        public DateTime DataHoraDeCriacao { get; set; }
 
         public FluentValidation.Results.ValidationResult Validate => new UsuarioValidation().Validate(this);
+        //public FluentValidation.Results.ValidationResult Validate => throw new NotImplementedException();
+
+
     }
 }
