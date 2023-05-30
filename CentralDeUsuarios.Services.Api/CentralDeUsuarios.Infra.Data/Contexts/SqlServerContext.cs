@@ -16,7 +16,7 @@ namespace CentralDeUsuarios.Infra.Data.Contexts
         //base(dbContextOptions) toda ves que usa base é porque estou acessando o contrutor da minha classe pai
         //esta pasando pata a classe pai nesse caso é a DbContext ou seja estou pegando esse argumento dbContextOptions
         //e passando para o construtor da DbContext ele vai receber todos os parametros para se conectar na base de dados
-        //dentre eles a connectionString
+        //dentre eles a connectionString PARA CRIAR UM CONSTRUTOR É CTOR TAB TAB
         public SqlServerContext(DbContextOptions<SqlServerContext> dbContextOptions) 
             : base(dbContextOptions)        
         {
@@ -24,6 +24,7 @@ namespace CentralDeUsuarios.Infra.Data.Contexts
 
 
         }
+        
         //foi criado um arquivo appsetting.json para receber por injeção de dependencia
         //metodo para definir a string de conexão ou seja a conectionstring do projeto
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

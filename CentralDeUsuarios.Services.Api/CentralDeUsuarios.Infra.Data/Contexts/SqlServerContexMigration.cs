@@ -18,6 +18,9 @@ namespace CentralDeUsuarios.Infra.Data.Contexts
         //esse metodo CreateDbContext vai injetar no meu SqlServerContext a dependencia que ele precisa que é uma herança do  DbContaxt .
         public SqlServerContext CreateDbContext(string[] args)
         {
+            #region Localizar o arquivo appsettings.json
+
+            
             //throw new NotImplementedException();
             //Para isso preciso capturar a conection scring dessa forma que é feita
             //tenho que localizar o arquivo appsettings.json
@@ -29,13 +32,21 @@ namespace CentralDeUsuarios.Infra.Data.Contexts
 
             //achou
             //agora pegar a string de conection dessa formar
-            //CentralDeUsuarios foi o nome dado para a connectionString dentro do arquivo appsettings.json"
-            var root = configurationBuilder.Build();
-            var connectionString = root.GetSection("ConnetionString").GetSection("CentralDeUsuarios").Value;
+            #endregion
 
+            #region Capiturando o arquivo appsettings.json            
+            //CentralDeUsuarios foi o nome dado para a connectionStrings dentro do arquivo appsettings.json"
+            var root = configurationBuilder.Build();
+            var connectionString = root.GetSection("ConnectionStrings").GetSection("CentralDeUsuarios").Value;
+            #endregion
+
+            #region Fazer a injeçao de dependência
             //agora farei a injeção de dependencia na classe SqlServerContext
             var builder = new DbContextOptionsBuilder<SqlServerContext>();
+            builder.UseSqlServer(connectionString);
             return new SqlServerContext(builder.Options);
+            #endregion
+
         }
     }
 }
