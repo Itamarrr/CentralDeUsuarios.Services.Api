@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s8JglUsfQzWPkDo+PRbTGkZCJDEfpjeClkJDyZv7mUvztVuoxfnPQX+GtzGaIAlY4IhKuF4+jMHD7tLXPxdlSA==",
+  "dgSpecHash": "S9OBQJzr1v2Tq7drZKVEljseXOoAUlhAEax+uJZqkYMA/FT26MHT+BnyBLCXxiFv+tgCblhRi7NyPy/u/vft6w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hitss\\Documents\\Projetos\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Domain.Core\\CentralDeUsuarios.Domain.Core.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Hitss\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hitss\\Documents\\Projetos\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api.csproj": {}
+    "C:\\Users\\Hitss\\Documents\\Projetos\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hitss\\Documents\\Projetos\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api.csproj": {
+    "C:\\Users\\Hitss\\Documents\\Projetos\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hitss\\Documents\\Projetos\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api.csproj",
-        "projectName": "CentralDeUsuarios.Services.Api",
-        "projectPath": "C:\\Users\\Hitss\\Documents\\Projetos\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Hitss\\Documents\\Projetos\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.csproj",
+        "projectName": "CentralDeUsuarios",
+        "projectPath": "C:\\Users\\Hitss\\Documents\\Projetos\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.csproj",
         "packagesPath": "C:\\Users\\Hitss\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Hitss\\Documents\\Projetos\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\obj\\",
         "projectStyle": "PackageReference",

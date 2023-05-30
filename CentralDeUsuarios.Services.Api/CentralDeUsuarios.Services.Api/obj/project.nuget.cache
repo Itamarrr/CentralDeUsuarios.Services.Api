@@ -1,16 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1uy0kUTB6evpeNpSONh08mSr6e8eEf8J4bpYTCsovMf3WQESQipDZU6VXmQRwlMMmJj+I7LMdpyNCvEvIGq8Eg==",
+  "dgSpecHash": "5RYrSY2sBzXXGNf3KqXAA+H3aFfRwljoCnCkO+hzG8TRDqZjziPs69/E3sK2LMkB8jP2ou9oo9GFP0yMDPUB9g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hitss\\Documents\\Projetos\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Hitss\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.0\\microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
-    "C:\\Users\\Hitss\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
-    "C:\\Users\\Hitss\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
-    "C:\\Users\\Hitss\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
-    "C:\\Users\\Hitss\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
-    "C:\\Users\\Hitss\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "C:\\Users\\Hitss\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Hitss\\Documents\\Projetos\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
