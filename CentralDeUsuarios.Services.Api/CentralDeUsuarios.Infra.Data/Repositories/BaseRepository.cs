@@ -46,7 +46,7 @@ namespace CentralDeUsuarios.Infra.Data.Repositories
             _sqlServiceContext.SaveChanges();// executa a deleção
         }
 
-        public virtual List<TEntity> GetAll()
+        public virtual  List<TEntity> GetAll()
         {
             return _sqlServiceContext.Set<TEntity>().ToList();// vai devolver uma lista de algum obj 
         }

@@ -24,50 +24,23 @@ namespace CentralDeUsuarios.Infra.Data.Repositories
         {
             _sqlServerContext = sqlServerContext;
         }
-        public Usuario? GetByEmail(string email)
+
+        public override void Create(Usuario entity)// AQUI ESTOU SOBRESCREVENDO O METODO CREAT DO BaseRepository somente 
+                                                   // para acrescentar a cripitografia da senha depois de criptografar eu mando para gravar
+        {
+            entity.Senha = MD5Helper.Encrypt(entity.Senha);// criptografando a senha
+            base.Create(entity);//  gravando
+        }
+        public override void Update(Usuario entity)// AQUI ESTOU SOBRESCREVENDO O METODO alterar DO BaseRepository
+        {
+            entity.Senha = MD5Helper.Encrypt(entity.Senha);// criptografando a senha
+            base.Update(entity);
+        }
+
+        public Usuario GetByEmail(string email)
         {
             return _sqlServerContext.Usuario.FirstOrDefault(u => u.Email.Equals(email));// traga o primeiro email que seja igual a esse emai
         }
-        //Comentato pois estou refatorando o codigo para herdar minha classe BaseRepository que já tem um crud
-        //public void Create(Usuario entity)
-        //{
-        //    entity.Senha = MD5Helper.Encrypt(entity.Senha);
-        //    _sqlServerContext.Entry(entity).State = EntityState.Added;
-        //    //_sqlServerContext.Usuario.Add(entity); pode ser assim tambem
-        //    _sqlServerContext.SaveChanges();
-        //}
-
-        //public void Update(Usuario entity)
-        //{
-        //    entity.Senha = MD5Helper.Encrypt(entity.Senha);
-        //    _sqlServerContext.Entry(entity).State = EntityState.Modified;           
-        //    _sqlServerContext.SaveChanges();
-        //}
-
-        //public void Delete(Usuario entity)
-        //{
-        //    _sqlServerContext.Entry(entity).State = EntityState.Deleted;
-        //    //_sqlServerContext.Usuario.Remove(entity); pode ser assim tambem
-        //    _sqlServerContext.SaveChanges();
-        //}
-
-        //public List<Usuario> GetAll()
-        //{
-        //    return _sqlServerContext.Usuario.ToList();
-        //}
-
-
-        //public Usuario GetById(Guid id)
-        //{
-        //    //Find sempre busca encima da chave primaria  id
-        //    return _sqlServerContext.Usuario.Find(id);
-        //}
-
-
-
-        //public Usuario GetByEmail(string email)
-        //{
-        //    return _sqlServerContext.Usuario.FirstOrDefault(u => u.Email.Equals(email));
-        //}
+        
     }
 }
