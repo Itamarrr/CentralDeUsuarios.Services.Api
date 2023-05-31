@@ -11,6 +11,8 @@
 using System;
 using System.Reflection;
 
+[assembly: Xunit.TestFrameworkAttribute("Xunit.Di.DiXunitTestFramework", "Xunit.Di")]
+[assembly: Xunit.Di.DiSetupTypeAttribute("CentralDeUsuarios.UnitTests.Setup", "CentralDeUsuarios.UnitTests")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("CentralDeUsuarios.UnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

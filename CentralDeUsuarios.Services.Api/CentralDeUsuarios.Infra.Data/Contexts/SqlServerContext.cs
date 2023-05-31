@@ -20,7 +20,7 @@ namespace CentralDeUsuarios.Infra.Data.Contexts
         public SqlServerContext(DbContextOptions<SqlServerContext> dbContextOptions) 
             : base(dbContextOptions)        
         {
-            //agora fazendo um injetor
+            //agora fazendo um injetor não vou mais precisar do oncofigure marretado
 
 
         }
