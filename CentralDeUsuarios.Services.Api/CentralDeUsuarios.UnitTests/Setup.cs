@@ -1,4 +1,5 @@
 ﻿using CentralDeUsuario.Domain.Interfaces.Repositories;
+using CentralDeUsuario.Domain.Interfaces.Services;
 using CentralDeUsuarios.Infra.Data.Contexts;
 using CentralDeUsuarios.Infra.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -66,6 +67,10 @@ namespace CentralDeUsuarios.UnitTests
                 //injetando a classe UsuarioRepository na interface IUsuarioRepository
                 services.AddTransient<IUsuarioRepository, UsuarioRepository>();//UsuarioRepository é a classe que estou injetando na minha interface
 
+                #endregion
+
+                #region Injetar a classe UsuarioDomainServices na interface IUsuarioRepository
+                services.AddTransient<IUsuarioDomainServices, UsuarioDomainServices>();
                 #endregion
             });
     
