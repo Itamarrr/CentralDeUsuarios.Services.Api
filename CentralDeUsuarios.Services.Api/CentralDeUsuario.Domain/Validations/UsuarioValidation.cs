@@ -18,7 +18,8 @@ namespace CentralDeUsuario.Domain.Validations
         {
             RuleFor(u => u.Id).NotEmpty().WithMessage("Id é Obrigatorio");
             RuleFor(u => u.Nome).NotEmpty().Length(6, 150).WithMessage("Nome Invalido Tem que conter no minimo 6 e maxio 150 caracteres");
-            RuleFor(u => u.Email).NotEmpty().EmailAddress().WithMessage("Campo Email Invalido");
+            RuleFor(u => u.Email).NotEmpty().EmailAddress().WithMessage("Endereço de Email Invalido");
+            RuleFor(u => u.Senha).NotEmpty().Length(8,10).Matches(@"[A-Z]+").WithMessage("Senha deve ter 8 maximo 10 caracteres");
             RuleFor(u => u.Senha).NotEmpty().Length(8,10).Matches(@"[A-Z]+").WithMessage("Senha deve ter ao menos uma letra maiuscula");
             RuleFor(u => u.Senha).NotEmpty().Length(8,10).Matches(@"[a-z]+").WithMessage("Senha deve ter ao menos uma letra minuscula");
             RuleFor(u => u.Senha).NotEmpty().Length(8,10).Matches(@"[0-9]+").WithMessage("Senha deve ter ao menos um numero");

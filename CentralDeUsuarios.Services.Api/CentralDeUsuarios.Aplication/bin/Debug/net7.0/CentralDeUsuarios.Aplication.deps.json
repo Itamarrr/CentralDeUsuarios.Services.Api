@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "CentralDeUsuarios.Aplication/1.0.0": {
+        "runtime": {
+          "CentralDeUsuarios.Aplication.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CentralDeUsuarios.Aplication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
