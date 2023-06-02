@@ -31,7 +31,7 @@ namespace CentralDeUsuarios.UnitTests.Services
             }
             catch (Exception e)
             {
-                //Fail estou gerando um resultado de falha
+                //Fail estou gerando um resultado de falha ou seja estou forçando a dar falha
                 Assert.Fail(e.Message);
             }
         }
