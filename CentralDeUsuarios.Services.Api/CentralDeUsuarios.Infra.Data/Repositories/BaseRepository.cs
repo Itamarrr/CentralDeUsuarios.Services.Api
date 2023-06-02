@@ -56,5 +56,12 @@ namespace CentralDeUsuarios.Infra.Data.Repositories
             return _sqlServiceContext.Set<TEntity>().Find(id);//Find pegar a chave
         }
 
+
+
+        //server para destruir ou jogar fora para não ficar em memoria as sujeiras
+        public void Dispose()
+        {
+            _sqlServiceContext.Dispose();
+        }
     }
 }
