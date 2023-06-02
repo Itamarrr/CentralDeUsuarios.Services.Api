@@ -70,7 +70,7 @@ namespace CentralDeUsuarios.UnitTests
                 #endregion
 
                 #region Injetar a classe UsuarioDomainServices na interface IUsuarioRepository
-                services.AddTransient<IUsuarioDomainServices, UsuarioDomainServices>();
+                services.AddTransient<IUsuarioDomainServices, UsuarioDomainServices>();// AddTransient VAI ACIONAR O Dispose()
                 #endregion
             });
     

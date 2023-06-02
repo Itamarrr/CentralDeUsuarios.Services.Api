@@ -13,9 +13,8 @@ namespace CentralDeUsuarios.Domain.Core
     /// </summary>
     /// <typeparam name="TEntity">Define o tipo da entidade</typeparam>
     /// <typeparam name="TKey">Define o tipo do ID da entidade</typeparam>
-    public interface IBaseRepository<TEntity, TKey>:
-        IDisposable //IDisposable estou falando que todo repositorio tem que implemtar o
-                    //IDisposable que ele é um coletor de lixo vou implemtner na classe que herda
+    public interface IBaseRepository<TEntity, TKey>: IDisposable //IDisposable estou falando que todo repositorio tem que implemtar o
+        //IDisposable que ele é um coletor de lixo vou implemtner na classe que herda
         where TEntity : class
     {
         void Create(TEntity entity);

@@ -33,5 +33,10 @@ namespace CentralDeUsuario.Domain.Interfaces.Services
             _usuarioRepository.Create(usuario);
 
         }
+
+        public void Dispose()
+        {
+            _usuarioRepository.Dispose();//descartando ou limpando as sujeiras de onte estou injetando o _usuarioRepository
+        }
     }
 }
