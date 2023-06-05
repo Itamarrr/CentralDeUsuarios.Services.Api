@@ -11,7 +11,10 @@
     <Folder Include="Mappings\" />
     <Folder Include="Adapters\" />
     <Folder Include="Workflows\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CentralDeUsuario.Domain\CentralDeUsuario.Domain.csproj" />
   </ItemGroup>
 
 </Project>
