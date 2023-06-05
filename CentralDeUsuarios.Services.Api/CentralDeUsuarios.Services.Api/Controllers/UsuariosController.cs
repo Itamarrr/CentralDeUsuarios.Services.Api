@@ -1,4 +1,6 @@
-﻿using CentralDeUsuarios.Aplication.Interfaces;
+﻿using CentralDeUsuario.Domain.Entities;
+using CentralDeUsuarios.Aplication.Commands;
+using CentralDeUsuarios.Aplication.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,11 +14,18 @@ namespace CentralDeUsuarios.Services.Api.Controllers
         //pra isso tive que fazer referencia do CentralDeUsuarios.Services.Api ao projeto CentralDeUsuarios.Aplication 
         private readonly IUsuarioAppService _usuarioAppService;
 
+        public UsuariosController(IUsuarioAppService usuarioAppService)
+        {
+            _usuarioAppService = usuarioAppService;
+        }
+
         //HttpPost para criar um usuario
         [HttpPost]
-        public IActionResult Post()
+        public IActionResult Post(CriarUsuarioCommand command)//CriarUsuarioCommand command é para assinar
+                                                              //a requisição mas tambem poderia criar um objeto
         {
             return Ok();
+            //_usuarioAppService.CriarUsuario(command);
         }
     }
 }
