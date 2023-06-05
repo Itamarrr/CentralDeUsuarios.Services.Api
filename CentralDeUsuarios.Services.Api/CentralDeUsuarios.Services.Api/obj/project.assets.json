@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "FluentValidation/11.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.OpenApi/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -107,10 +120,73 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "CentralDeUsuario.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "CentralDeUsuarios.Domain.Core": "1.0.0",
+          "FluentValidation": "11.4.0"
+        },
+        "compile": {
+          "bin/placeholder/CentralDeUsuario.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CentralDeUsuario.Domain.dll": {}
+        }
+      },
+      "CentralDeUsuarios.Aplication/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "CentralDeUsuario.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CentralDeUsuarios.Aplication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CentralDeUsuarios.Aplication.dll": {}
+        }
+      },
+      "CentralDeUsuarios.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FluentValidation": "11.4.0"
+        },
+        "compile": {
+          "bin/placeholder/CentralDeUsuarios.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CentralDeUsuarios.Domain.Core.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "FluentValidation/11.4.0": {
+      "sha512": "WZJyrNf4suiaI6avVG32W9kmBLC3+V5rDTcLeRJjeU4tDmTyDIOz1459DzCKppXs34YpZg9rCUzDY3M4XxG7Ug==",
+      "type": "package",
+      "path": "fluentvalidation/11.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.4.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
     "Microsoft.AspNetCore.OpenApi/7.0.0": {
       "sha512": "P1mkNhZ3IwU3phNLIUkgqVXb1exnooTalIYwpSON3oKKkcRtACDgS4WpO+xnwFw4KzV0bmgkUqB3acXxIefvvg==",
       "type": "package",
@@ -451,10 +527,26 @@
         "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "CentralDeUsuario.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CentralDeUsuario.Domain/CentralDeUsuario.Domain.csproj",
+      "msbuildProject": "../CentralDeUsuario.Domain/CentralDeUsuario.Domain.csproj"
+    },
+    "CentralDeUsuarios.Aplication/1.0.0": {
+      "type": "project",
+      "path": "../CentralDeUsuarios.Aplication/CentralDeUsuarios.Aplication.csproj",
+      "msbuildProject": "../CentralDeUsuarios.Aplication/CentralDeUsuarios.Aplication.csproj"
+    },
+    "CentralDeUsuarios.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../CentralDeUsuarios.Domain.Core/CentralDeUsuarios.Domain.Core.csproj",
+      "msbuildProject": "../CentralDeUsuarios.Domain.Core/CentralDeUsuarios.Domain.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "CentralDeUsuarios.Aplication >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
@@ -490,7 +582,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Hitss\\Documents\\Projetos\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Aplication\\CentralDeUsuarios.Aplication.csproj": {
+              "projectPath": "C:\\Users\\Hitss\\Documents\\Projetos\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Aplication\\CentralDeUsuarios.Aplication.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
