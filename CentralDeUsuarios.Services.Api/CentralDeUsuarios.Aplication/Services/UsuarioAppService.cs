@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CentralDeUsuario.Domain.Entities;
 using CentralDeUsuario.Domain.Interfaces.Services;
 using CentralDeUsuarios.Aplication.Commands;
 using CentralDeUsuarios.Aplication.Interfaces;
@@ -20,20 +21,37 @@ namespace CentralDeUsuarios.Aplication.Services
         private readonly MensageQueueProducer? _mensageQueueProducer; //MensageQueueProducer é o que escreve na mensageria
         private readonly IMapper? _mapper; //AutoMaper para fazer o depara dos obj
 
-        public UsuarioAppService(IUsuarioDomainServices usuarioDomainServices)
+
+        // selecionei minhas dependencias toda e mandei adcionar parametros no construtor se o construtor já estiver eu ter que adcionar novos parametros
+        public UsuarioAppService(IUsuarioDomainServices usuarioDomainServices, MensageQueueProducer? mensageQueueProducer, IMapper? mapper)
         {
             _usuarioDomainServices = usuarioDomainServices;
+            _mensageQueueProducer = mensageQueueProducer;
+            _mapper = mapper;
         }
 
         public void CriarUsuario(CriarUsuarioCommand command)
         {
-            throw new NotImplementedException();
+            //com o Mapper podemos fazer assim
+            var usuario = _mapper?.Map<Usuario>(command);// ele esta falando Mapper pega o command e dele me traz um usuario 
+
+
+
+            //Sem o AutoMaper eu teria que fazer o Maper assim ou seja eu teria que preencher na mão tudo
+            //var usuario = new Usuario
+            //{
+            //    Id = Guid.NewGuid(),
+            //    Nome = command.Nome,
+            //    Email = command.Email,
+            //    Senha = command.Senha;
+            //    DataHoraDeCriacao = DateTime.Now,
+            //};
         }
 
         public void Dispose()
         {
             //Dispose para limpar sujeiras ou seja aquilo que injeta como dependencia depois joga fora
-            _usuarioDomainServices.Dispose();
+            _usuarioDomainServices?.Dispose();
         }
     }
 }
