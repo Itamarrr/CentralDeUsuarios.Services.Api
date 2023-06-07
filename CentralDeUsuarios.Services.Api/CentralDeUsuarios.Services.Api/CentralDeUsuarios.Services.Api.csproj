@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CentralDeUsuarios.Aplication\CentralDeUsuarios.Aplication.csproj" />
     <ProjectReference Include="..\CentralDeUsuarios.Infra.Data\CentralDeUsuarios.Infra.Data.csproj" />
+    <ProjectReference Include="..\CentralDeUsuarios.Infra.Messages\CentralDeUsuarios.Infra.Messages.csproj" />
   </ItemGroup>
 
 </Project>
