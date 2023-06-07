@@ -24,8 +24,13 @@ namespace CentralDeUsuarios.Services.Api.Controllers
         public IActionResult Post(CriarUsuarioCommand command)//CriarUsuarioCommand command é para assinar
                                                               //a requisição mas tambem poderia criar um objeto
         {
-            return Ok();
-            //_usuarioAppService.CriarUsuario(command);
+            _usuarioAppService.CriarUsuario(command);
+            return  StatusCode(201, new //201 é quando queremos retornar sucesso
+            {
+               message = "Usuario Cadastrado com sucesso. ",
+               command
+            }); 
+            
         }
     }
 }
