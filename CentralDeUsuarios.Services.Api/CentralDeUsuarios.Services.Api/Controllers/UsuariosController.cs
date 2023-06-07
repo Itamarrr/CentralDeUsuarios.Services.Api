@@ -25,7 +25,7 @@ namespace CentralDeUsuarios.Services.Api.Controllers
                                                               //a requisição mas tambem poderia criar um objeto
         {
             _usuarioAppService.CriarUsuario(command);
-            return  StatusCode(201, new //201 é quando queremos retornar sucesso
+            return  StatusCode(201, new //201 ou 200 é quando queremos retornar sucesso
             {
                message = "Usuario Cadastrado com sucesso. ",
                command

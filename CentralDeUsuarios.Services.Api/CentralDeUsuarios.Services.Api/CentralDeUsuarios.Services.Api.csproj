@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CentralDeUsuarios.Aplication\CentralDeUsuarios.Aplication.csproj" />
+    <ProjectReference Include="..\CentralDeUsuarios.Infra.Data\CentralDeUsuarios.Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>

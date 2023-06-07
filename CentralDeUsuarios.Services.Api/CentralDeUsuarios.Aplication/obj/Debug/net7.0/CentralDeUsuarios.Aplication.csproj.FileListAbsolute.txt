@@ -10,3 +10,10 @@ C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuari
 C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Aplication\obj\Debug\net7.0\refint\CentralDeUsuarios.Aplication.dll
 C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Aplication\obj\Debug\net7.0\CentralDeUsuarios.Aplication.pdb
 C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Aplication\obj\Debug\net7.0\ref\CentralDeUsuarios.Aplication.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Aplication\bin\Debug\net7.0\CentralDeUsuario.Domain.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Aplication\bin\Debug\net7.0\CentralDeUsuarios.Domain.Core.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Aplication\bin\Debug\net7.0\CentralDeUsuarios.Infra.Messages.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Aplication\bin\Debug\net7.0\CentralDeUsuario.Domain.pdb
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Aplication\bin\Debug\net7.0\CentralDeUsuarios.Infra.Messages.pdb
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Aplication\bin\Debug\net7.0\CentralDeUsuarios.Domain.Core.pdb
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Aplication\obj\Debug\net7.0\CentralDeUsuarios.Aplication.csproj.CopyComplete

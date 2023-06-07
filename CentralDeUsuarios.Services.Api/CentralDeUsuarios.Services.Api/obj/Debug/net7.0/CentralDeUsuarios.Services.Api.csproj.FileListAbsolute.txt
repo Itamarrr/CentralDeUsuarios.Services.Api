@@ -31,3 +31,17 @@ C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuari
 C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\obj\Debug\net7.0\CentralDeUsuarios.Services.Api.pdb
 C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\obj\Debug\net7.0\CentralDeUsuarios.Services.Api.genruntimeconfig.cache
 C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\obj\Debug\net7.0\ref\CentralDeUsuarios.Services.Api.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\bin\Debug\net7.0\RabbitMQ.Client.Core.DependencyInjection.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\bin\Debug\net7.0\CentralDeUsuario.Domain.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\bin\Debug\net7.0\CentralDeUsuarios.Aplication.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\bin\Debug\net7.0\CentralDeUsuarios.Domain.Core.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\bin\Debug\net7.0\CentralDeUsuarios.Infra.Messages.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\bin\Debug\net7.0\CentralDeUsuarios.Aplication.pdb
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\bin\Debug\net7.0\CentralDeUsuario.Domain.pdb
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\bin\Debug\net7.0\CentralDeUsuarios.Domain.Core.pdb
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\bin\Debug\net7.0\CentralDeUsuarios.Infra.Messages.pdb

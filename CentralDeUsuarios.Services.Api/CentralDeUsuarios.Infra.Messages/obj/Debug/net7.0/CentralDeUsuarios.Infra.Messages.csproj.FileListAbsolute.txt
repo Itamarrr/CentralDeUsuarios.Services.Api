@@ -1,0 +1,12 @@
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Messages\bin\Debug\net7.0\CentralDeUsuarios.Infra.Messages.deps.json
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Messages\bin\Debug\net7.0\CentralDeUsuarios.Infra.Messages.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Messages\bin\Debug\net7.0\CentralDeUsuarios.Infra.Messages.pdb
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Messages\obj\Debug\net7.0\CentralDeUsuarios.Infra.Messages.csproj.AssemblyReference.cache
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Messages\obj\Debug\net7.0\CentralDeUsuarios.Infra.Messages.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Messages\obj\Debug\net7.0\CentralDeUsuarios.Infra.Messages.AssemblyInfoInputs.cache
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Messages\obj\Debug\net7.0\CentralDeUsuarios.Infra.Messages.AssemblyInfo.cs
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Messages\obj\Debug\net7.0\CentralDeUsuarios.Infra.Messages.csproj.CoreCompileInputs.cache
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Messages\obj\Debug\net7.0\CentralDeUsuarios.Infra.Messages.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Messages\obj\Debug\net7.0\refint\CentralDeUsuarios.Infra.Messages.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Messages\obj\Debug\net7.0\CentralDeUsuarios.Infra.Messages.pdb
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Messages\obj\Debug\net7.0\ref\CentralDeUsuarios.Infra.Messages.dll
