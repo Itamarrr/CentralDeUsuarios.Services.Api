@@ -3,7 +3,10 @@ using CentralDeUsuario.Domain.Entities;
 using CentralDeUsuario.Domain.Interfaces.Services;
 using CentralDeUsuarios.Aplication.Commands;
 using CentralDeUsuarios.Aplication.Interfaces;
+using CentralDeUsuarios.Infra.Messages.Models;
 using CentralDeUsuarios.Infra.Messages.Producers;
+using FluentValidation;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,8 +35,26 @@ namespace CentralDeUsuarios.Aplication.Services
 
         public void CriarUsuario(CriarUsuarioCommand command)
         {
-            //com o Mapper podemos fazer assim
+            //com o Mapper podemos fazer assim ou seja gerando um usuario a partir do command (automapper)
             var usuario = _mapper?.Map<Usuario>(command);// ele esta falando Mapper pega o command e dele me traz um usuario 
+
+            //executar a validação do usuario
+            var validate = usuario?.Validate;
+            if (!validate.IsValid)
+            {
+                throw new ValidationException(validate.Errors);
+                //criar usuario
+                _usuarioDomainServices.CriarUsuario(usuario);
+
+                // Criando o conteudo da mensagem que sera enviada para fila
+                var _messageQueueModel = new MensageQueueModel 
+                { 
+                    Conteudo = JsonConvert.SerializeObject(usuario)
+                };
+
+                //enviar usuario para fila
+                _mensageQueueProducer.Create(_messageQueueModel);
+            }
 
 
 
