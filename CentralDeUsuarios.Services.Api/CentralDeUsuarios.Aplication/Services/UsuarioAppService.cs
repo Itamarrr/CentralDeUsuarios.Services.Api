@@ -43,12 +43,16 @@ namespace CentralDeUsuarios.Aplication.Services
             if (!validate.IsValid)
             {
                 throw new ValidationException(validate.Errors);
+               
+            }
+            else
+            {
                 //criar usuario
                 _usuarioDomainServices.CriarUsuario(usuario);
 
                 // Criando o conteudo da mensagem que sera enviada para fila
-                var _messageQueueModel = new MensageQueueModel 
-                { 
+                var _messageQueueModel = new MensageQueueModel
+                {
                     Conteudo = JsonConvert.SerializeObject(usuario)
                 };
 
