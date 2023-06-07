@@ -24,7 +24,7 @@ namespace CentralDeUsuarios.Services.Api
         }
 
         // injetando dependencias AddEntityFramework
-        public static void AddEntityFramework(this WebApplicationBuilder builder)
+        public static void AddEntityFrameworkServices(this WebApplicationBuilder builder)
         {
             var connectionString = builder.Configuration.GetConnectionString("CentralDeUsuarios");//  pegando a conection string
             builder.Services.AddDbContext<SqlServerContext>(options => options.UseSqlServer(connectionString));
