@@ -2,6 +2,7 @@
 using CentralDeUsuarios.Infra.Messages.Settings;
 using Microsoft.Extensions.Options;
 using Microsoft.VisualBasic.FileIO;
+using Newtonsoft.Json;
 using RabbitMQ.Client;
 using System;
 using System.Collections.Generic;
@@ -53,7 +54,12 @@ namespace CentralDeUsuarios.Infra.Messages.Producers
                         );
 
                     // escrevendo o conteudo da fila
-
+                    channel.BasicPublish(
+                        exchange: string.Empty,
+                        routingKey: _messsageSettings?.Queue,// nome da fila
+                        basicProperties: null,
+                        body: Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(model))// oque eu vou gravar na fila só que tenha que mandar em bytes tranformando ele em Json e mandando em Bytes
+                        ); 
 
                 }
             }
