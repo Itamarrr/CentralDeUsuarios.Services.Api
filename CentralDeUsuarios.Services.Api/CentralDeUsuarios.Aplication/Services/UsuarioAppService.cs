@@ -20,15 +20,15 @@ namespace CentralDeUsuarios.Aplication.Services
     {
         //readonly é usuario para  quando é construtor esta abaixo a primeira dependencia
         //pra isso tive que fazer referencia ao projeto CentralDeUsuarioDomain 
-        private readonly IUsuarioDomainServices? _usuarioDomainServices; // dependencia do dominio que é o fluxo princiapal
-        private readonly MensageQueueProducer? _mensageQueueProducer; //MensageQueueProducer é o que escreve na mensageria
-        private readonly IMapper? _mapper; //AutoMaper para fazer o depara dos obj
+        private readonly IUsuarioDomainServices _usuarioDomainService; // dependencia do dominio que é o fluxo princiapal
+        private readonly MensageQueueProducer _mensageQueueProducer; //MensageQueueProducer é o que escreve na mensageria
+        private readonly IMapper _mapper; //AutoMaper para fazer o depara dos obj
 
 
         // selecionei minhas dependencias toda e mandei adcionar parametros no construtor se o construtor já estiver eu ter que adcionar novos parametros
-        public UsuarioAppService(IUsuarioDomainServices usuarioDomainServices, MensageQueueProducer? mensageQueueProducer, IMapper? mapper)
+        public UsuarioAppService(IUsuarioDomainServices usuarioDomainService, MensageQueueProducer mensageQueueProducer, IMapper mapper)
         {
-            _usuarioDomainServices = usuarioDomainServices;
+            _usuarioDomainService = usuarioDomainService;
             _mensageQueueProducer = mensageQueueProducer;
             _mapper = mapper;
         }
@@ -48,7 +48,7 @@ namespace CentralDeUsuarios.Aplication.Services
             else
             {
                 //criar usuario
-                _usuarioDomainServices.CriarUsuario(usuario);
+                _usuarioDomainService.CriarUsuario(usuario);
 
                 // Criando o conteudo da mensagem que sera enviada para fila
                 var _messageQueueModel = new MensageQueueModel
@@ -76,7 +76,7 @@ namespace CentralDeUsuarios.Aplication.Services
         public void Dispose()
         {
             //Dispose para limpar sujeiras ou seja aquilo que injeta como dependencia depois joga fora
-            _usuarioDomainServices?.Dispose();
+            _usuarioDomainService.Dispose();
         }
     }
 }

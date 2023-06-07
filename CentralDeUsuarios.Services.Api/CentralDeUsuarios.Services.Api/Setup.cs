@@ -4,6 +4,7 @@ using CentralDeUsuarios.Aplication.Interfaces;
 using CentralDeUsuarios.Aplication.Services;
 using CentralDeUsuarios.Infra.Data.Contexts;
 using CentralDeUsuarios.Infra.Data.Repositories;
+using CentralDeUsuarios.Infra.Messages;
 using CentralDeUsuarios.Infra.Messages.Helpers;
 using CentralDeUsuarios.Infra.Messages.Producers;
 using CentralDeUsuarios.Infra.Messages.Settings;
@@ -25,7 +26,7 @@ namespace CentralDeUsuarios.Services.Api
 
         // injetando dependencias AddEntityFramework
         public static void AddEntityFrameworkServices(this WebApplicationBuilder builder)
-        {
+        {                                                                       
             var connectionString = builder.Configuration.GetConnectionString("CentralDeUsuarios");//  pegando a conection string
             builder.Services.AddDbContext<SqlServerContext>(options => options.UseSqlServer(connectionString));
         }
@@ -34,10 +35,10 @@ namespace CentralDeUsuarios.Services.Api
         public static void AddMessageServices(this WebApplicationBuilder builder)
         {
             builder.Services.Configure<MessageSettings>(builder.Configuration.GetSection("MessageSettings"));//
-            builder.Services.Configure<MessageSettings>(builder.Configuration.GetSection("MailSettings"));//
+            builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));//
 
-            builder.Services.AddTransient<MensageQueueProducer>();
-            builder.Services.AddTransient<EmailHelper>();
+            builder.Services.AddTransient<MensageQueueProducer>();// registrando
+            builder.Services.AddTransient<EmailHelper>();// registrando
 
 
 

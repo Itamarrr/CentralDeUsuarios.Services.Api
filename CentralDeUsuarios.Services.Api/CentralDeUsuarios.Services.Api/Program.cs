@@ -10,6 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //chamndo todas as dependencias da Classe Setup
+Setup.AddRegisterServices(builder);
 Setup.AddEntityFrameworkServices(builder);
 Setup.AddMessageServices(builder);
 Setup.AddAutoMapperServices(builder);
