@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Options;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -14,9 +15,9 @@ namespace CentralDeUsuarios.Infra.Messages.Helpers
     {
         private readonly MailSettings _mailSettings;
 
-        public EmailHelper(MailSettings mailSettings)
+        public EmailHelper(IOptions<MailSettings> mailSettings)//IOptions é um obj que vamos usar paraa injetar as configurações na helpers
         {
-            _mailSettings = mailSettings;
+            _mailSettings = mailSettings.Value;
         }
 
         //metodo para envio de email
