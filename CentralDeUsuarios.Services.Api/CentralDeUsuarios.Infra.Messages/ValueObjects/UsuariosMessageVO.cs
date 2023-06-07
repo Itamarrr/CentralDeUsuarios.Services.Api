@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CentralDeUsuarios.Infra.Messages.ValueObjects
 {
-    internal class UsuariosMessageVO
+    //oBIJETO DE valor para gravar dados do usuario na mensagem da fila 
+    public class UsuariosMessageVO
     {
+        public Guid Id { get; set; }
+        public string? Nome { get; set; }
+        public string? Email { get; set; }
     }
 }
