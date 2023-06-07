@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "cx320D2rhwoba0mRRkgVvo1N/uEjICzgfgGRl/WtMrDDoGwuxFdkhTU2AF3jlx+Rvr6N7VawHC7DC956U92l4A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Hitss\\Documents\\Projetos\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Services.Api\\CentralDeUsuarios.Infra.Messages\\CentralDeUsuarios.Infra.Messages.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hitss\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.12\\microsoft.extensions.configuration.3.1.12.nupkg.sha512",
+    "C:\\Users\\Hitss\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.12\\microsoft.extensions.configuration.abstractions.3.1.12.nupkg.sha512",
+    "C:\\Users\\Hitss\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.12\\microsoft.extensions.configuration.binder.3.1.12.nupkg.sha512",
+    "C:\\Users\\Hitss\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.12\\microsoft.extensions.dependencyinjection.3.1.12.nupkg.sha512",
+    "C:\\Users\\Hitss\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.12\\microsoft.extensions.dependencyinjection.abstractions.3.1.12.nupkg.sha512",
+    "C:\\Users\\Hitss\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.12\\microsoft.extensions.fileproviders.abstractions.3.1.12.nupkg.sha512",
+    "C:\\Users\\Hitss\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\3.1.12\\microsoft.extensions.hosting.abstractions.3.1.12.nupkg.sha512",
+    "C:\\Users\\Hitss\\.nuget\\packages\\microsoft.extensions.logging\\3.1.12\\microsoft.extensions.logging.3.1.12.nupkg.sha512",
+    "C:\\Users\\Hitss\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.12\\microsoft.extensions.logging.abstractions.3.1.12.nupkg.sha512",
+    "C:\\Users\\Hitss\\.nuget\\packages\\microsoft.extensions.options\\3.1.12\\microsoft.extensions.options.3.1.12.nupkg.sha512",
+    "C:\\Users\\Hitss\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.12\\microsoft.extensions.primitives.3.1.12.nupkg.sha512",
+    "C:\\Users\\Hitss\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Hitss\\.nuget\\packages\\rabbitmq.client\\6.5.0\\rabbitmq.client.6.5.0.nupkg.sha512",
+    "C:\\Users\\Hitss\\.nuget\\packages\\rabbitmq.client.core.dependencyinjection\\5.0.0\\rabbitmq.client.core.dependencyinjection.5.0.0.nupkg.sha512",
+    "C:\\Users\\Hitss\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\Hitss\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
