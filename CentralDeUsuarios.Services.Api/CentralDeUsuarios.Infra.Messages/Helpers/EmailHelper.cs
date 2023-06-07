@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Mail;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -35,8 +36,9 @@ namespace CentralDeUsuarios.Infra.Messages.Helpers
 
             #region Enviando o email
             var smtpClient = new SmtpClient(_mailSettings.Smtp, _mailSettings.Port.Value);
-            smtpClient.Send(mailMessage);
-
+            smtpClient.EnableSsl = true; // para mandar email com conexão segura
+            smtpClient.Credentials = new NetworkCredential(_mailSettings.Email, _mailSettings.Password);// autenticando na conta que vai mandar email
+            smtpClient.Send(mailMessage);// pra enviar o email
             #endregion
 
         }
