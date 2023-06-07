@@ -59,7 +59,7 @@ namespace CentralDeUsuarios.Aplication.Services
                 var _messageQueueModel = new MensageQueueModel
                 {   
                     Tipo = TipoMensagem.CONFIRMACAO_DE_CADASTRO,
-                    Conteudo = JsonConvert.SerializeObject(usuario)
+                    Conteudo = JsonConvert.SerializeObject(usuario) 
                 };
                 //enviar usuario para fila
                 _mensageQueueProducer.Create(_messageQueueModel);
