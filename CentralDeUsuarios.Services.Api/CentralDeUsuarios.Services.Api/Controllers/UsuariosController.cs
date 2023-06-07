@@ -27,7 +27,7 @@ namespace CentralDeUsuarios.Services.Api.Controllers
             _usuarioAppService.CriarUsuario(command);
             return  StatusCode(201, new //201 ou 200 é quando queremos retornar sucesso
             {
-               message = "Usuario Cadastrado com sucesso. ",
+               message = "Usuario Cadastrado com sucesso.",
                command
             }); 
             
