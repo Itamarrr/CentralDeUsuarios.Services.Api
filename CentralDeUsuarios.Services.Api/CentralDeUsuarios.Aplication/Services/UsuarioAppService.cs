@@ -1,6 +1,8 @@
-﻿using CentralDeUsuario.Domain.Interfaces.Services;
+﻿using AutoMapper;
+using CentralDeUsuario.Domain.Interfaces.Services;
 using CentralDeUsuarios.Aplication.Commands;
 using CentralDeUsuarios.Aplication.Interfaces;
+using CentralDeUsuarios.Infra.Messages.Producers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +16,9 @@ namespace CentralDeUsuarios.Aplication.Services
     {
         //readonly é usuario para  quando é construtor esta abaixo a primeira dependencia
         //pra isso tive que fazer referencia ao projeto CentralDeUsuarioDomain 
-        private readonly IUsuarioDomainServices _usuarioDomainServices;
+        private readonly IUsuarioDomainServices? _usuarioDomainServices; // dependencia do dominio que é o fluxo princiapal
+        private readonly MensageQueueProducer? _mensageQueueProducer; //MensageQueueProducer é o que escreve na mensageria
+        private readonly IMapper? _mapper; //AutoMaper para fazer o depara dos obj
 
         public UsuarioAppService(IUsuarioDomainServices usuarioDomainServices)
         {
