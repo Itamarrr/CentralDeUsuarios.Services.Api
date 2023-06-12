@@ -20,7 +20,6 @@ Setup.AddAutoMapperServices(builder);
 //Ativar o consumidor da nossa mensageria
 builder.Services.AddHostedService<MessageQueueConsumer>();
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

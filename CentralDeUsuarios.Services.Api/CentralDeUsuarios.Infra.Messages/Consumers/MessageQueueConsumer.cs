@@ -28,7 +28,7 @@ namespace CentralDeUsuarios.Infra.Messages.Consumers
 
         //CONSTRUTOR
         //IOptionsSnapshot server para injetar um obj cuja as informações foram capturado no appjson
-        public MessageQueueConsumer(IOptionsSnapshot<MessageSettings> messageSettings, IServiceProvider? serviceProvider, EmailHelper? emailHelper)
+        public MessageQueueConsumer(IOptions<MessageSettings> messageSettings, IServiceProvider? serviceProvider, EmailHelper? emailHelper)
         {
             _messageSettings = messageSettings.Value;
             _serviceProvider = serviceProvider;
@@ -80,9 +80,9 @@ namespace CentralDeUsuarios.Infra.Messages.Consumers
                         using (var scope = _serviceProvider.CreateScope())
                         {
                             //capiturar os usuario contido na mensagem
-                            var messageMenssageVO= JsonConvert.DeserializeObject<UsuariosMessageVO>(messageQueuModel.Conteudo);
+                            var usuarioMenssageVO= JsonConvert.DeserializeObject<UsuariosMessageVO>(messageQueuModel.Conteudo);
                             //enviar email agora
-                            EnviarMensagemDeConfirmacaoDeCadastro(messageMenssageVO);
+                            EnviarMensagemDeConfirmacaoDeCadastro(usuarioMenssageVO);
                             //Comunicar ao Rabbit que a menssagem foi processada para retirar a mensagem da fila
                             _model.BasicAck(args.DeliveryTag, false);// eu falo mensagem foi processada pode retirar ela da fila
                         }

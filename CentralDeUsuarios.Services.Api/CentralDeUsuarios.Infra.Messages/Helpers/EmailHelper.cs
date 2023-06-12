@@ -27,9 +27,19 @@ namespace CentralDeUsuarios.Infra.Messages.Helpers
         public void Send(string mailTo, string subject, string body)
         {
             #region Escrevendo o email
+            _mailSettings.Smtp = "smtp-mail.outlook.com";
+            _mailSettings.Email = "grupoberimba@outlook.com.br";
+            _mailSettings.Password = "passwordberinba";
+            _mailSettings.Port = 587;
+
+            //        "Email": "grupoberimba@outlook.com", // endereço ou seja aconta que vai mandar email
+            //"Password": "passwordberinba", // a senha da conta que vai fazer o envio 
+            //"Smtp": "smtp-mail.outlook.com", // servidor smtp dessa conta 
+            //"Port": 587 // a porta 
             //Eu mandarei o email da conta que eu criei que é _mailSettings para a conta do mailTo
             //ou seja do remetente _mailSettings.Email para o destinatario mailTo
             var mailMessage = new MailMessage(_mailSettings.Email, mailTo);
+            
             mailMessage.Subject = subject;
             mailMessage.Body = body;
             mailMessage.IsBodyHtml = true;// para mandar o email em html
