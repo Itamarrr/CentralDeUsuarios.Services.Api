@@ -11,6 +11,8 @@ using RabbitMQ.Client.Events;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
+using System.Net.Mime;
 using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
@@ -108,22 +110,21 @@ namespace CentralDeUsuarios.Infra.Messages.Consumers
         {
             var mailTo = usuariosMessageVO.Email;
             var subject = $"Confimação de cadastro de usuario. ID: {usuariosMessageVO.Id} ";
-            var body = $@"
-                          Olá {usuariosMessageVO.Nome},
-                          <br/>
-                          <br/>
-                          <strong>Parabens, sua conta de usuario foi criada com suacesso! <strong/>
-                          <br/>
-                          <br/>
-                            ID: <strong>   {usuariosMessageVO.Id}   </strong>
-                            Nome: <strong> {usuariosMessageVO.Nome} </strong>
-                          <br/>
-                           Att, <br/>
-                            Grupo de Capoeira Berimba.
+            string files = @"https://drive.google.com/file/d/1M8vnEVk5ITD7se03wQW03TvO9EKB8gvS/view?usp=sharing";
+            //Define o caminho e cria o arquivo HTML
+            var caminhoArquivoHTML = files;
+            var htmlBody = $" Olá {{usuariosMessageVO.Nome}},\r\n " +
+                $"                        <br/>\r\n " +
+                $"                        <br/>\r\n " +
+                $"                        <strong>Parabens {usuariosMessageVO.Nome}, sua conta de usuario foi criada com suacesso! <strong/>\r\n " +
+                $"                        <br/>\r\n                          <br/>\r\n" +
+                //$"                           ID: <strong>   {usuariosMessageVO.Id}   </strong>\r\n " +
+                //$"                          Nome: <strong> {usuariosMessageVO.Nome} </strong>\r\n " +
+                $"                          <br/>\r\n                           Att, <br/>\r\n " +
+                $"                          <br/>\r\n    {caminhoArquivoHTML}                       Att, <br/>\r\n " +
+                $"                          Grupo de Capoeira Berimba.";
 
-                        ";
-
-            _emailHelper.Send(mailTo, subject, body);
+            _emailHelper.Send(mailTo, subject, htmlBody);
         }
     }
 }

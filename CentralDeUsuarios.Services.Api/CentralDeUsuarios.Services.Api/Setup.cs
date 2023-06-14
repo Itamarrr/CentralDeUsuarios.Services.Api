@@ -4,6 +4,10 @@ using CentralDeUsuarios.Aplication.Interfaces;
 using CentralDeUsuarios.Aplication.Services;
 using CentralDeUsuarios.Infra.Data.Contexts;
 using CentralDeUsuarios.Infra.Data.Repositories;
+using CentralDeUsuarios.Infra.Logs.Contexts;
+using CentralDeUsuarios.Infra.Logs.Interfaces;
+using CentralDeUsuarios.Infra.Logs.Persistences;
+using CentralDeUsuarios.Infra.Logs.Settings;
 using CentralDeUsuarios.Infra.Messages;
 using CentralDeUsuarios.Infra.Messages.Helpers;
 using CentralDeUsuarios.Infra.Messages.Producers;
@@ -34,8 +38,8 @@ namespace CentralDeUsuarios.Services.Api
         // injetando dependencias AddMessageServices
         public static void AddMessageServices(this WebApplicationBuilder builder)
         {
-            builder.Services.Configure<MessageSettings>(builder.Configuration.GetSection("MessageSettings"));//
-            builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));//
+            builder.Services.Configure<MessageSettings>(builder.Configuration.GetSection("MessageSettings"));//MessageSettings parametros vem do appsettings.json
+            builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("EmailSettings"));//EmailSettings parametros vem do appsettings.json
 
             builder.Services.AddTransient<MensageQueueProducer>();// registrando
             builder.Services.AddTransient<EmailHelper>();// registrando
@@ -50,6 +54,14 @@ namespace CentralDeUsuarios.Services.Api
             builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }
 
+        public static void AddMongoDBServices(this WebApplicationBuilder builder)
+        {
+                                                                                          
+            builder.Services.Configure<MongoDBSettings>(builder.Configuration.GetSection("MongoDBSettings"));//MongoDBSettings parametros vem do appsettings.json
+            builder.Services.AddSingleton<MongoDBContext>();// mantem oque foi injetado para o mongo sempre vai ficar aberta
+            builder.Services.AddTransient<ILogUsuariosPersistence, LogUsuariosPersistence>();
+            // builder.Services.AddTransient// destroi oque foi injetado por injeção de dependencia atravez da herança IDisposable
+        }
 
     }
 }

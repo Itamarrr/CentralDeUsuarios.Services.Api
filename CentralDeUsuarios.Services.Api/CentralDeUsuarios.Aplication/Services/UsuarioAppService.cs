@@ -3,6 +3,8 @@ using CentralDeUsuario.Domain.Entities;
 using CentralDeUsuario.Domain.Interfaces.Services;
 using CentralDeUsuarios.Aplication.Commands;
 using CentralDeUsuarios.Aplication.Interfaces;
+using CentralDeUsuarios.Infra.Logs.Interfaces;
+using CentralDeUsuarios.Infra.Logs.Models;
 using CentralDeUsuarios.Infra.Messages.Models;
 using CentralDeUsuarios.Infra.Messages.Producers;
 using FluentValidation;
@@ -10,6 +12,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,15 +25,17 @@ namespace CentralDeUsuarios.Aplication.Services
         //pra isso tive que fazer referencia ao projeto CentralDeUsuarioDomain 
         private readonly IUsuarioDomainServices _usuarioDomainService; // dependencia do dominio que é o fluxo princiapal
         private readonly MensageQueueProducer _mensageQueueProducer; //MensageQueueProducer é o que escreve na mensageria
+        private readonly ILogUsuariosPersistence _logUsuariosPersistence;
         private readonly IMapper _mapper; //AutoMaper para fazer o depara dos obj
 
 
         // selecionei minhas dependencias toda e mandei adcionar parametros no construtor se o construtor já estiver eu ter que adcionar novos parametros
-        public UsuarioAppService(IUsuarioDomainServices usuarioDomainService, MensageQueueProducer mensageQueueProducer, IMapper mapper)
+        public UsuarioAppService(IUsuarioDomainServices usuarioDomainService, MensageQueueProducer mensageQueueProducer, IMapper mapper, ILogUsuariosPersistence logUsuariosPersistence)
         {
             _usuarioDomainService = usuarioDomainService;
             _mensageQueueProducer = mensageQueueProducer;
             _mapper = mapper;
+            _logUsuariosPersistence = logUsuariosPersistence;
         }
 
         public void CriarUsuario(CriarUsuarioCommand command)
@@ -63,6 +68,17 @@ namespace CentralDeUsuarios.Aplication.Services
                 };
                 //enviar usuario para fila
                 _mensageQueueProducer.Create(_messageQueueModel);
+                #endregion
+
+                #region Gravar o log da operação
+                var logUsuarioModel = new LogUsuarioModel();
+                logUsuarioModel.UsuarioId = usuario.Id;
+                logUsuarioModel.DataHora = DateTime.Now;
+                logUsuarioModel.Operacao = "Criação de usuário";
+                logUsuarioModel.Detalhes = JsonConvert.SerializeObject(new {usuario.Nome, usuario.Email});
+
+                _logUsuariosPersistence.Create(logUsuarioModel);
+
                 #endregion
 
             }

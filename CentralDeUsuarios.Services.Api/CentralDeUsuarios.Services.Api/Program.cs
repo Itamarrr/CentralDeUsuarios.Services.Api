@@ -11,11 +11,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 //chamndo todas as dependencias da Classe Setup
 Setup.AddRegisterServices(builder);
 Setup.AddEntityFrameworkServices(builder);
 Setup.AddMessageServices(builder);
 Setup.AddAutoMapperServices(builder);
+Setup.AddMongoDBServices(builder);
 
 //Ativar o consumidor da nossa mensageria
 builder.Services.AddHostedService<MessageQueueConsumer>();

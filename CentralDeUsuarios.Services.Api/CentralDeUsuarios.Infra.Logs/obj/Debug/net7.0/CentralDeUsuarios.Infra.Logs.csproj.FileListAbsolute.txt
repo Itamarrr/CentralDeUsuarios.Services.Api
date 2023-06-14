@@ -1,0 +1,12 @@
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Logs\bin\Debug\net7.0\CentralDeUsuarios.Infra.Logs.deps.json
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Logs\bin\Debug\net7.0\CentralDeUsuarios.Infra.Logs.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Logs\bin\Debug\net7.0\CentralDeUsuarios.Infra.Logs.pdb
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Logs\obj\Debug\net7.0\CentralDeUsuarios.Infra.Logs.csproj.AssemblyReference.cache
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Logs\obj\Debug\net7.0\CentralDeUsuarios.Infra.Logs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Logs\obj\Debug\net7.0\CentralDeUsuarios.Infra.Logs.AssemblyInfoInputs.cache
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Logs\obj\Debug\net7.0\CentralDeUsuarios.Infra.Logs.AssemblyInfo.cs
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Logs\obj\Debug\net7.0\CentralDeUsuarios.Infra.Logs.csproj.CoreCompileInputs.cache
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Logs\obj\Debug\net7.0\CentralDeUsuarios.Infra.Logs.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Logs\obj\Debug\net7.0\refint\CentralDeUsuarios.Infra.Logs.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Logs\obj\Debug\net7.0\CentralDeUsuarios.Infra.Logs.pdb
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Infra.Logs\obj\Debug\net7.0\ref\CentralDeUsuarios.Infra.Logs.dll

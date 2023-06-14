@@ -11,9 +11,4 @@
     <PackageReference Include="MongoDB.Driver" Version="2.19.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Persistences\" />
-  </ItemGroup>
-
 </Project>

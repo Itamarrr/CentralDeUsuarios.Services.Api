@@ -1,4 +1,5 @@
-﻿using CentralDeUsuarios.Infra.Logs.Settings;
+﻿using CentralDeUsuarios.Infra.Logs.Models;
+using CentralDeUsuarios.Infra.Logs.Settings;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using System;
@@ -13,14 +14,14 @@ namespace CentralDeUsuarios.Infra.Logs.Contexts
     public class MongoDBContext
     {
         private readonly MongoDBSettings _mongoDBSettings;
-        private IMongoDatabase _mongoDataBase;// para se conectar no mongo
+        private readonly IMongoDatabase _mongoDataBase;// para se conectar no mongo
         public MongoDBContext(IOptions<MongoDBSettings> mongoDBSettings)//IOptions ajuda a trazer dados do meu appsettins.json
         {
             _mongoDBSettings = mongoDBSettings.Value;
 
             #region Conectando no banco de dados
             var client = MongoClientSettings.FromUrl(new (_mongoDBSettings.Host));
-            if (_mongoDBSettings.IsSSL.Equals(false))
+            if (_mongoDBSettings.IsSSL == "False")
             {             
                 client.SslSettings = new SslSettings
                 {
@@ -31,5 +32,8 @@ namespace CentralDeUsuarios.Infra.Logs.Contexts
             }
             #endregion
         }
+
+        //propriedade para mapear a coleção do MongoDB OU SEJA NO MONGO TEM A ENTIDADE LogUsuarios Etem que se o nome certinho
+        public IMongoCollection<LogUsuarioModel> LogUsuarios => _mongoDataBase.GetCollection<LogUsuarioModel>("LogUsuarios");
     }
 }

@@ -17,3 +17,5 @@ C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuari
 C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Aplication\bin\Debug\net7.0\CentralDeUsuarios.Infra.Messages.pdb
 C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Aplication\bin\Debug\net7.0\CentralDeUsuarios.Domain.Core.pdb
 C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Aplication\obj\Debug\net7.0\CentralDeUsuarios.Aplication.csproj.CopyComplete
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Aplication\bin\Debug\net7.0\CentralDeUsuarios.Infra.Logs.dll
+C:\Users\Hitss\Documents\Projetos\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Services.Api\CentralDeUsuarios.Aplication\bin\Debug\net7.0\CentralDeUsuarios.Infra.Logs.pdb
