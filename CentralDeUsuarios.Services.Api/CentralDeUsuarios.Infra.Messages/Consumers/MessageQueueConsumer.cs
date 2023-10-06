@@ -113,16 +113,17 @@ namespace CentralDeUsuarios.Infra.Messages.Consumers
             string files = @"https://drive.google.com/file/d/1M8vnEVk5ITD7se03wQW03TvO9EKB8gvS/view?usp=sharing";
             //Define o caminho e cria o arquivo HTML
             var caminhoArquivoHTML = files;
-            var htmlBody = $" Olá {{usuariosMessageVO.Nome}},\r\n " +
+            var htmlBody = $" Olá {usuariosMessageVO.Nome},\r\n " +
                 $"                        <br/>\r\n " +
                 $"                        <br/>\r\n " +
-                $"                        <strong>Parabens {usuariosMessageVO.Nome}, sua conta de usuario foi criada com suacesso! <strong/>\r\n " +
+                $"                        <strong>Parabens, sua conta de usuario foi criada com suacesso! <strong/>\r\n " +
                 $"                        <br/>\r\n                          <br/>\r\n" +
                 //$"                           ID: <strong>   {usuariosMessageVO.Id}   </strong>\r\n " +
                 //$"                          Nome: <strong> {usuariosMessageVO.Nome} </strong>\r\n " +
-                $"                          <br/>\r\n                           Att, <br/>\r\n " +
-                $"                          <br/>\r\n    {caminhoArquivoHTML}                       Att, <br/>\r\n " +
-                $"                          Grupo de Capoeira Berimba.";
+                $"                        <br/>\r\n                           " +
+                $"Att, <br/>\r\n " +
+                $"                        <br/>\r\n    {caminhoArquivoHTML}   <br/>\r\n " +
+                $"                        Grupo de Capoeira Berimba.";
 
             _emailHelper.Send(mailTo, subject, htmlBody);
         }

@@ -36,3 +36,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+//Declaração publica da classe para rodar em outros programas
+public partial class Program { }
